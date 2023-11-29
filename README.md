@@ -1,14 +1,34 @@
 # WorkFuncScript
 These are some script files that handle the VASP's output files to get the Work Function.
-## 简介
 
-这个项目包含了两个 Python 脚本，用于处理和分析 LOCPOT 文件以及计算真空能级和绘制 Distance-Potential 曲线图。
+## Introduction
+This project contains several python and fortran scripts for processing and analyzing LOCPOT file, as well as obtaining Fermi energy levels and ultimately Distance-Potential plots and work functions.
 
-## 使用说明
+## Procedures
 
-### 1. 处理 LOCPOT 文件
-
-首先，确保你的 Python 版本为 3.x，并安装了所需的依赖库：
+### 1. Processing of LOCPOT file
+We obtained the LOCPOT by performing DFT calculations with the VASP program, and subsequently will have to process the LOCPOT with the vtotav.py file.
+First, make sure your Python version is 3.x and that you have the required dependencies installed.
 
 ```bash
 pip install matplotlib ase numpy
+```
+
+Next, use the following command to process the LOCPOT file and generate LOCPOT_Z:
+
+```bash
+python vtotav.py LOCPOT z
+```
+This generates a LOCPOT_Z file in the current directory, where LOCPOT is the name of the input file and z is the direction parameter.
+
+
+### 2. Calculating vacuum energy level and plotting graph
+You can use the CalculationWF.py script to calculate vacuum energy levels and plot Distance-Potential curves. Make sure you have installed the required Python dependencies.
+
+Run the following commands to perform the calculation and plot:
+
+```bash
+python CalculationWF.py
+```
+
+One can then obtain the vacuum energy level.
