@@ -23,7 +23,7 @@ This generates a LOCPOT_Z file in the current directory, where LOCPOT is the nam
 
 
 ### 2. Calculating vacuum energy level and plotting graph
-You can use the CalculationWF.py script to calculate vacuum energy levels and plot Distance-Potential curves. Make sure you have installed the required Python dependencies.
+You can use the CalculationWF.py script to calculate vacuum energy level and plot Distance-Potential curve. Make sure you have installed the required Python dependencies.
 
 Run the following commands to perform the calculation and plot:
 
