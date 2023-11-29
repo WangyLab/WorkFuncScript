@@ -32,3 +32,30 @@ python CalculationWF.py
 ```
 
 One can then obtain the vacuum energy level.
+
+
+### 3. Calculating E-fermi
+Use the following Linux commands to extract the lines in the OUTCAR file that contain the "E-fermi" keyword and extract the first value:
+```bash
+grep "E-fermi" OUTCAR | head -n 1 | awk '{print $3}'
+```
+
+
+### 4. Calculating Work Function
+
+E_WF = E_vacuum - E-fermi
+
+- `E_WF` is the work function.
+- `E_vacuum` is the vacuum energy level of the material.
+- `E_fermi` is the Fermi energy level.
+
+## Requirements
+
+Before running this project, make sure the following dependencies are installed:
+
+| Dependencies | Version Requirements |
+| -------------- | --------------- |
+| Python | = 3.x |
+| NumPy | >= 1.24.2 |
+| Matplotlib | >= 3.7.1 |
+| ase | >= 3.22.1 |
