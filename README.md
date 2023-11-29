@@ -1,5 +1,5 @@
 # WorkFuncScript
-This is a script file that handles the VASP's output files to get the Work Function.
+These are some script files that handle the VASP's output files to get the Work Function.
 ## 简介
 
 这个项目包含了两个 Python 脚本，用于处理和分析 LOCPOT 文件以及计算真空能级和绘制 Distance-Potential 曲线图。
