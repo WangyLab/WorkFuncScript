@@ -9,7 +9,7 @@ from ase.calculators.vasp import VaspChargeDensity
 
 starttime = time.perf_counter()
 print("Starting calculation at", end=' ')
-print(time.strftime("%H:%M:%S on %a %d %b %Y"))
+print(time.strftime("%H:%M:%S on %#m %d %b %Y"))
 
 if len(sys.argv) != 3:
     print("\n** ERROR: Must specify name of file and direction on command line.")
